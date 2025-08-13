@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Vehicle Technology - VoltEdge Motors</title>
+    <meta name="description" content="Discover VoltEdge Motors' cutting-edge electric vehicle technology including advanced battery systems, fast charging, safety features, and connectivity.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html" aria-label="VoltEdge Motors Home">
+                        <span class="logo-text">VoltEdge</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop" aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="models.html" class="nav-link">Models</a></li>
+                        <li><a href="technology.html" class="nav-link active">Technology</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Mobile Hamburger -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+            <div class="mobile-menu-content">
+                <nav class="mobile-nav" aria-label="Mobile navigation">
+                    <ul class="mobile-nav-list">
+                        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                        <li><a href="models.html" class="mobile-nav-link">Models</a></li>
+                        <li><a href="technology.html" class="mobile-nav-link active">Technology</a></li>
+                        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+                        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+                    </ul>
+                    <div class="mobile-menu-footer">
+                        <p class="mobile-menu-tagline">Drive Electric. Drive Future.</p>
+                        <div class="mobile-social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <h1 class="page-title">Revolutionary Technology</h1>
+                    <p class="page-subtitle">Innovation that powers the future of electric mobility</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Battery Technology -->
+        <section class="tech-section" id="battery-tech">
+            <div class="container">
+                <div class="tech-content">
+                    <div class="tech-text" data-animate>
+                        <div class="tech-badge">Battery Technology</div>
+                        <h2 class="tech-title">Next-Generation Battery Systems</h2>
+                        <p class="tech-description">Our revolutionary lithium-ion battery technology delivers industry-leading range and performance. With advanced thermal management and intelligent energy distribution, VoltEdge batteries provide consistent power delivery in all weather conditions.</p>
+                        
+                        <div class="tech-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4 class="feature-title">650km Range</h4>
+                                    <p class="feature-text">Industry-leading range on a single charge</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-thermometer-half"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4 class="feature-title">Thermal Management</h4>
+                                    <p class="feature-text">Advanced cooling system for optimal performance</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4 class="feature-title">8-Year Warranty</h4>
+                                    <p class="feature-text">Comprehensive coverage and peace of mind</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-visual" data-animate>
+                        <div class="battery-animation">
+                            <div class="battery-container">
+                                <div class="battery-level" id="battery-level"></div>
+                                <div class="battery-indicator">
+                                    <span class="battery-percentage">100%</span>
+                                </div>
+                            </div>
+                            <div class="battery-stats">
+                                <div class="stat">
+                                    <span class="stat-label">Capacity</span>
+                                    <span class="stat-value">100 kWh</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Efficiency</span>
+                                    <span class="stat-value">95%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Fast Charging -->
+        <section class="tech-section tech-section-alt" id="charging-tech">
+            <div class="container">
+                <div class="tech-content">
+                    <div class="tech-visual" data-animate>
+                        <div class="charging-animation">
+                            <div class="charging-station">
+                                <div class="charging-cable"></div>
+                                <div class="charging-port">
+                                    <div class="charging-indicator" id="charging-indicator"></div>
+                                </div>
+                            </div>
+                            <div class="charging-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="charging-progress"></div>
+                                </div>
+                                <div class="charging-stats">
+                                    <span class="charging-time">18 minutes</span>
+                                    <span class="charging-label">80% charge</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-text" data-animate>
+                        <div class="tech-badge">Fast Charging</div>
+                        <h2 class="tech-title">Ultra-Fast Charging Technology</h2>
+                        <p class="tech-description">Experience the future of charging with our ultra-fast DC charging capability. Get 80% charge in just 18 minutes, making long-distance travel more convenient than ever before.</p>
+                        
+                        <div class="tech-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4 class="feature-title">18-Minute Charging</h4>
+                                    <p class="feature-text">0-80% in ultra-fast charging stations</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4 class="feature-title">50,000+ Stations</h4>
+                                    <p class="feature-text">Access to nationwide charging network</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4 class="feature-title">Home Charging</h4>
+                                    <p class="feature-text">Convenient overnight charging solutions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Safety Technology -->
+        <section class="tech-section" id="safety-tech">
+            <div class="container">
+                <div class="tech-content">
+                    <div class="tech-text" data-animate>
+                        <div class="tech-badge">Safety Systems</div>
+                        <h2 class="tech-title">Advanced Safety Technology</h2>
+                        <p class="tech-description">Our comprehensive suite of safety features uses AI and machine learning to protect you and your passengers. From collision avoidance to emergency braking, VoltEdge vehicles set new standards for automotive safety.</p>
+                        
+                        <div class="safety-grid">
+                            <div class="safety-feature">
+                                <i class="fas fa-eye"></i>
+                                <h4>360° Vision</h4>
+                                <p>Surround-view camera system</p>
+                            </div>
+                            
+                            <div class="safety-feature">
+                                <i class="fas fa-brain"></i>
+                                <h4>AI Assistance</h4>
+                                <p>Intelligent driving aids</p>
+                            </div>
+                            
+                            <div class="safety-feature">
+                                <i class="fas fa-car-crash"></i>
+                                <h4>Collision Avoidance</h4>
+                                <p>Automatic emergency braking</p>
+                            </div>
+                            
+                            <div class="safety-feature">
+                                <i class="fas fa-road"></i>
+                                <h4>Lane Assist</h4>
+                                <p>Lane keeping and departure warning</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-visual" data-animate>
+                        <div class="safety-visualization">
+                            <img src="assets/img/dashboard.jpg" alt="Advanced safety dashboard" loading="lazy">
+                            <div class="safety-overlay">
+                                <div class="safety-indicator active" data-feature="vision">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <div class="safety-indicator" data-feature="ai">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="safety-indicator" data-feature="collision">
+                                    <i class="fas fa-car-crash"></i>
+                                </div>
+                                <div class="safety-indicator" data-feature="lane">
+                                    <i class="fas fa-road"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Connectivity -->
+        <section class="tech-section tech-section-alt" id="connectivity-tech">
+            <div class="container">
+                <div class="tech-content">
+                    <div class="tech-visual" data-animate>
+                        <div class="connectivity-hub">
+                            <div class="central-node">
+                                <i class="fas fa-wifi"></i>
+                            </div>
+                            <div class="connection-nodes">
+                                <div class="node" data-service="ota">
+                                    <i class="fas fa-download"></i>
+                                    <span>OTA Updates</span>
+                                </div>
+                                <div class="node" data-service="streaming">
+                                    <i class="fas fa-music"></i>
+                                    <span>Streaming</span>
+                                </div>
+                                <div class="node" data-service="navigation">
+                                    <i class="fas fa-map"></i>
+                                    <span>Navigation</span>
+                                </div>
+                                <div class="node" data-service="assistant">
+                                    <i class="fas fa-microphone"></i>
+                                    <span>Voice AI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-text" data-animate>
+                        <div class="tech-badge">Smart Connectivity</div>
+                        <h2 class="tech-title">Connected Car Experience</h2>
+                        <p class="tech-description">Stay connected with 5G connectivity, over-the-air updates, and AI-powered features. Your VoltEdge vehicle becomes smarter over time, with new features and improvements delivered wirelessly.</p>
+                        
+                        <div class="connectivity-features">
+                            <div class="connectivity-item">
+                                <h4>Over-the-Air Updates</h4>
+                                <p>Automatic software updates that add new features and improve performance</p>
+                            </div>
+                            
+                            <div class="connectivity-item">
+                                <h4>Voice Assistant</h4>
+                                <p>Natural language AI assistant for hands-free control</p>
+                            </div>
+                            
+                            <div class="connectivity-item">
+                                <h4>Smart Navigation</h4>
+                                <p>Real-time traffic, charging station locations, and route optimization</p>
+                            </div>
+                            
+                            <div class="connectivity-item">
+                                <h4>Entertainment Hub</h4>
+                                <p>Streaming music, podcasts, and video services</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Technology CTA -->
+        <section class="tech-cta">
+            <div class="container">
+                <div class="cta-content" data-animate>
+                    <h2 class="cta-title">Experience the Technology</h2>
+                    <p class="cta-description">Schedule a test drive to experience VoltEdge's revolutionary technology firsthand</p>
+                    <a href="contact.html" class="btn btn-primary btn-large">Schedule Test Drive</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-gradient"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">VoltEdge</span>
+                    </div>
+                    <p class="footer-tagline">Drive Electric. Drive Future.</p>
+                    <p class="footer-description">Leading the electric revolution with innovative vehicles that combine cutting-edge technology with sustainable design.</p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Vehicles</h3>
+                    <ul class="footer-links">
+                        <li><a href="models.html">All Models</a></li>
+                        <li><a href="models.html">VoltEdge Apex</a></li>
+                        <li><a href="models.html">VoltEdge Pulse</a></li>
+                        <li><a href="models.html">Prime SUV</a></li>
+                        <li><a href="models.html">VoltEdge City</a></li>
+                        <li><a href="contact.html">Test Drive</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html">Leadership</a></li>
+                        <li><a href="about.html">Sustainability</a></li>
+                        <li><a href="contact.html">Careers</a></li>
+                        <li><a href="contact.html">Press</a></li>
+                        <li><a href="contact.html">Investor Relations</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Customer Support</a></li>
+                        <li><a href="contact.html">Service Centers</a></li>
+                        <li><a href="technology.html">Charging Network</a></li>
+                        <li><a href="technology.html">Software Updates</a></li>
+                        <li><a href="contact.html">Warranty</a></li>
+                        <li><a href="contact.html">Roadside Assistance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-newsletter">
+                    <h3 class="footer-title">Stay Connected</h3>
+                    <p class="newsletter-description">Get the latest news, updates, and exclusive offers from VoltEdge Motors.</p>
+                    
+                    <form class="newsletter-form" id="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" class="newsletter-input" placeholder="Enter your email" required aria-label="Email address">
+                            <button type="submit" class="newsletter-btn" aria-label="Subscribe to newsletter">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>1-800-VOLTEDGE</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@voltedgemotors.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2025 VoltEdge Motors. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Legal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <!-- Toast Notification Container -->
+    <div id="toast-container"></div>
+    
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+Role: You are a senior front-end engineer.
+Goal: Create a modern electric-vehicle company website (in the style of “BMR EV”) using only HTML, CSS, and vanilla JavaScript—no frameworks, no backend, no database.
+
+General Requirements
+
+Tech: Pure HTML, CSS, JavaScript (no React/Vue/etc.).
+
+Structure: Multi-page or SPA with router-like hash navigation. Prefer multi-page: index.html, models.html, technology.html, about.html, contact.html.
+
+Files:
+
+index.html, models.html, technology.html, about.html, contact.html
+
+assets/img/ (put placeholder images)
+
+assets/css/styles.css
+
+assets/js/main.js
+
+Use semantic HTML5, accessible markup (ARIA where helpful), responsive layout (mobile‑first), and performance-conscious code.
+
+Do NOT include server code or databases.
+
+Branding (placeholders we will replace later)
+
+Brand name: “VoltEdge Motors” (use this as a placeholder)
+
+Slogan: “Drive Electric. Drive Future.”
+
+Colors (CSS variables in :root):
+
+--brand:#0B8A6A (primary)
+
+--dark:#0E1217
+
+--mid:#1F2732
+
+--light:#F5F7FA
+
+--accent:#12C2A8
+
+Typography: Use system fonts or Google Fonts (e.g., Inter). Provide @import in CSS.
+
+Global UI
+
+Sticky header with transparent → solid on scroll.
+
+Desktop nav + mobile hamburger menu (animated).
+
+Smooth scroll, scroll-to-top button.
+
+Footer with quick links, social icons, and copyright.
+
+Reusable components: Button styles, card, grid, section header.
+
+Pages & Sections
+
+Home (index.html)
+
+Hero: full-bleed image/video placeholder, headline, CTA buttons (“Explore Models”, “Book a Test Drive” → go to Contact section/page).
+
+Key Metrics Strip: range (km), 0–100 km/h, charging time, warranty (cards).
+
+Featured Model Carousel (pure JS): 3–4 EV models with image, price (placeholder), specs chips.
+
+Technology Teaser: battery, motor, connectivity (3 feature cards).
+
+Testimonials (3 cards) with avatars (placeholders).
+
+Callout: “Locate a Dealer” (links to Contact).
+
+Models (models.html)
+
+Filterable grid (JS): body type (Hatch/Sedan/SUV), range tier, price tier (all mock/static).
+
+Each model card: image, name, short spec list, “View Specs” opens a modal with full specs.
+
+Comparison bar: allow selecting 2–3 models to open a comparison table modal (JS‑only, no backend).
+
+Technology (technology.html)
+
+Sections: Battery & Range, Fast Charging, Safety, Connectivity/OTA.
+
+Include simple animated infographic using CSS/JS (e.g., charging animation).
+
+About (about.html)
+
+Story timeline, mission/vision, leadership cards (with placeholder images), sustainability highlights.
+
+Contact (contact.html)
+
+Contact form (name, email, phone, city, message, model interest). Client-side only:
+
+Validation (JS).
+
+On submit, show success toast and open a prefilled mailto: link as fallback.
+
+Dealer Locator (static): city dropdown → shows cards with address, phone, map image placeholder.
+
+JavaScript Features (assets/js/main.js)
+
+Mobile menu toggle, sticky header scroll behavior.
+
+Smooth scrolling for anchor links.
+
+Home carousel (no external libs), autoplay with pause on hover.
+
+Models page:
+
+Filters (buttons/selects) that show/hide model cards.
+
+Spec modal open/close.
+
+Comparison table modal (dynamically builds from a static JS array of models/specs).
+
+Toast notifications (simple, reusable function).
+
+Persist selected filters in localStorage (optional nice-to-have).
+
+Data (Static)
+
+Create a const MODELS = [...] array in main.js with 4–6 demo models:
+
+Fields: id, name, bodyType, price, rangeKm, topSpeed, zeroToHundred, batteryKWh, fastCharge(mins), drivetrain(FWD/RWD/AWD), image.
+
+Use this for the models grid, spec modals, and comparisons.
+
+Design & Effects
+
+Clean, premium EV vibe; glassmorphism touches for cards.
+
+Subtle CSS transitions on hover; reveal-on-scroll animation (intersection observer).
+
+Use SVG icons or inline SVG for spec chips.
+
+Ensure good contrast and keyboard navigation.
+
+SEO & Meta
+
+Title and meta description per page.
+
+Open Graph tags in index.html.
+
+Favicon placeholder in assets/img/favicon.png.
+
+Accessibility
+
+Skip-to-content link.
+
+ARIA labels for nav and modals.
+
+Focus states visible; trap focus inside open modals; ESC to close.
+
+Testing & Docs
+
+Add a README.md with:
+
+How to run locally (open index.html)
+
+How to change logo/photos/colors/text
+
+File structure overview
+
+Comment the code where logic is non-trivial (carousel, filters, modals).
+
+Deliverables
+
+Provide all files with working relative paths.
+
+Use placeholder images in assets/img/ (name them clearly: hero.jpg, model-suv.jpg, etc.).
+
+Ensure no broken links and no external dependencies required to run.
+
+Build it now.

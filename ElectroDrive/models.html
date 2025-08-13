@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Vehicle Models - VoltEdge Motors</title>
+    <meta name="description" content="Explore VoltEdge Motors' complete lineup of electric vehicles. Compare models, specifications, and pricing to find your perfect electric car.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html" aria-label="VoltEdge Motors Home">
+                        <span class="logo-text">VoltEdge</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop" aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="models.html" class="nav-link active">Models</a></li>
+                        <li><a href="technology.html" class="nav-link">Technology</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Mobile Hamburger -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+            <div class="mobile-menu-content">
+                <nav class="mobile-nav" aria-label="Mobile navigation">
+                    <ul class="mobile-nav-list">
+                        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                        <li><a href="models.html" class="mobile-nav-link active">Models</a></li>
+                        <li><a href="technology.html" class="mobile-nav-link">Technology</a></li>
+                        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+                        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+                    </ul>
+                    <div class="mobile-menu-footer">
+                        <p class="mobile-menu-tagline">Drive Electric. Drive Future.</p>
+                        <div class="mobile-social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <h1 class="page-title">Our Electric Vehicle Models</h1>
+                    <p class="page-subtitle">Discover the perfect electric vehicle for your lifestyle</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Filters -->
+        <section class="filters-section">
+            <div class="container">
+                <div class="filters-wrapper">
+                    <div class="filters-header">
+                        <h2 class="filters-title">Find Your Perfect Match</h2>
+                        <button class="mobile-filters-toggle" id="mobile-filters-toggle">
+                            <i class="fas fa-filter"></i>
+                            <span>Filters</span>
+                        </button>
+                    </div>
+                    
+                    <div class="filters" id="filters">
+                        <div class="filter-group">
+                            <label class="filter-label">Body Type</label>
+                            <div class="filter-options">
+                                <button class="filter-btn active" data-filter="all" data-category="bodyType">All</button>
+                                <button class="filter-btn" data-filter="hatchback" data-category="bodyType">Hatchback</button>
+                                <button class="filter-btn" data-filter="sedan" data-category="bodyType">Sedan</button>
+                                <button class="filter-btn" data-filter="suv" data-category="bodyType">SUV</button>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label class="filter-label">Range</label>
+                            <div class="filter-options">
+                                <button class="filter-btn active" data-filter="all" data-category="range">All</button>
+                                <button class="filter-btn" data-filter="300-450" data-category="range">300-450km</button>
+                                <button class="filter-btn" data-filter="450-550" data-category="range">450-550km</button>
+                                <button class="filter-btn" data-filter="550+" data-category="range">550km+</button>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label class="filter-label">Price Range</label>
+                            <div class="filter-options">
+                                <button class="filter-btn active" data-filter="all" data-category="price">All</button>
+                                <button class="filter-btn" data-filter="under-35k" data-category="price">Under $35k</button>
+                                <button class="filter-btn" data-filter="35k-45k" data-category="price">$35k - $45k</button>
+                                <button class="filter-btn" data-filter="45k+" data-category="price">$45k+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Comparison Bar -->
+                <div class="comparison-bar" id="comparison-bar">
+                    <div class="comparison-content">
+                        <span class="comparison-text">Compare Models</span>
+                        <div class="comparison-count">0 selected</div>
+                        <button class="comparison-btn" id="compare-btn" disabled>Compare</button>
+                        <button class="comparison-clear" id="comparison-clear">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Models Grid -->
+        <section class="models-section">
+            <div class="container">
+                <div class="models-grid" id="models-grid">
+                    <!-- Models will be dynamically inserted here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Model Specs Modal -->
+    <div class="modal" id="specs-modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title">Model Specifications</h3>
+                <button class="modal-close" id="modal-close" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Specs content will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Comparison Modal -->
+    <div class="modal" id="comparison-modal">
+        <div class="modal-overlay" id="comparison-modal-overlay"></div>
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3 class="modal-title">Model Comparison</h3>
+                <button class="modal-close" id="comparison-modal-close" aria-label="Close comparison">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="comparison-table" id="comparison-table">
+                    <!-- Comparison table will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-gradient"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">VoltEdge</span>
+                    </div>
+                    <p class="footer-tagline">Drive Electric. Drive Future.</p>
+                    <p class="footer-description">Leading the electric revolution with innovative vehicles that combine cutting-edge technology with sustainable design.</p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Vehicles</h3>
+                    <ul class="footer-links">
+                        <li><a href="models.html">All Models</a></li>
+                        <li><a href="models.html">VoltEdge Apex</a></li>
+                        <li><a href="models.html">VoltEdge Pulse</a></li>
+                        <li><a href="models.html">Prime SUV</a></li>
+                        <li><a href="models.html">VoltEdge City</a></li>
+                        <li><a href="contact.html">Test Drive</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html">Leadership</a></li>
+                        <li><a href="about.html">Sustainability</a></li>
+                        <li><a href="contact.html">Careers</a></li>
+                        <li><a href="contact.html">Press</a></li>
+                        <li><a href="contact.html">Investor Relations</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Customer Support</a></li>
+                        <li><a href="contact.html">Service Centers</a></li>
+                        <li><a href="technology.html">Charging Network</a></li>
+                        <li><a href="technology.html">Software Updates</a></li>
+                        <li><a href="contact.html">Warranty</a></li>
+                        <li><a href="contact.html">Roadside Assistance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-newsletter">
+                    <h3 class="footer-title">Stay Connected</h3>
+                    <p class="newsletter-description">Get the latest news, updates, and exclusive offers from VoltEdge Motors.</p>
+                    
+                    <form class="newsletter-form" id="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" class="newsletter-input" placeholder="Enter your email" required aria-label="Email address">
+                            <button type="submit" class="newsletter-btn" aria-label="Subscribe to newsletter">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>1-800-VOLTEDGE</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@voltedgemotors.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2025 VoltEdge Motors. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Legal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <!-- Toast Notification Container -->
+    <div id="toast-container"></div>
+    
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

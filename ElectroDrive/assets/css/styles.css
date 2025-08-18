@@ -3672,3 +3672,208 @@ section {
     align-items: center;
 
 }
+
+
+
+
+/* //newly added by kaiftech */
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* 🚫 stop horizontal scroll */
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.carousel-slide {
+  flex: 0 0 100%; /* 1 per view on mobile */
+}
+
+@media (min-width: 768px) {
+  .carousel-slide { flex: 0 0 50%; } /* 2 per view */
+}
+
+@media (min-width: 1024px) {
+  .carousel-slide { flex: 0 0 33.333%; } /* 3 per view */
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive grid */
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.service-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--brand, #0B8A6A); /* customize brand color */
+  margin-bottom: 15px;
+}
+
+.service-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.service-desc {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Extra responsiveness tweaks */
+@media (max-width: 768px) {
+  .service-title {
+    font-size: 1.1rem;
+  }
+  .service-desc {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-icon {
+    font-size: 2rem;
+  }
+  .service-title {
+    font-size: 1rem;
+  }
+  .service-desc {
+    font-size: 0.85rem;
+  }
+}
+/*  by kaiftech */
+
+.hero-video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* new by kaiftech */
+
+/* ===== Brand Logo Gradient Animation ===== */
+/* ===== Animated Gradient Brand Text (always on) ===== */
+.logo-text {
+  font-size: 1.6rem;              /* tweak if you want it bigger */
+  font-weight: 800;
+  line-height: 1;
+  display: inline-block;
+  letter-spacing: .2px;
+  /* Advanced neon gradient loop */
+  background: linear-gradient(
+  90deg,
+  #00ff87,   /* Energy Green */
+  #0af5e0,   /* Aqua Electric */
+  #00c3ff,   /* Sky/Electric Blue */
+  #7b61ff,   /* Tech Violet */
+  #00ff87    /* loop back to Energy Green */
+);
+
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  /* Always animate */
+  animation: logoGradientMove 6s linear infinite;
+
+  /* subtle polish */
+  filter: drop-shadow(0 0 0 transparent);
+  transition: transform .25s ease, filter .25s ease;
+}
+
+/* Optional: a gentle lift/glow on hover/focus/active (keeps animation running) */
+.logo-text:hover,
+.logo-text:focus,
+.logo-text:active {
+  transform: translateY(-1px);
+  filter: drop-shadow(0 2px 8px rgba(20, 241, 149, 0.25));
+}
+
+/* Keyframes for the gradient sweep */
+@keyframes logoGradientMove {
+  0%   { background-position:   0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position:   0% 50%; }
+}
+
+/* Motion sensitivity: stop animation for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .logo-text { animation: none; }
+}
+
+/* (Optional) make the brand pop a bit more on small screens */
+@media (max-width: 480px) {
+  .logo-text { font-size: 1.35rem; }
+}
+
+
+/* kaiftech */
+/* ===== Hero Title Styling ===== */
+.hero-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Main Line - Drive Electric */
+.hero-title-main {
+  display: block;
+  background: linear-gradient(
+    90deg,
+    #00ff87,   /* Energy Green */
+    #0af5e0,   /* Aqua Electric */
+    #00c3ff,   /* Electric Blue */
+    #5ed38f,   /* Tech Violet */
+    #00ff87    /* loop */
+  );
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 6s linear infinite;
+}
+
+
+
+/* Gradient animation */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero-title { font-size: 2.2rem; }
+}
+@media (max-width: 480px) {
+  .hero-title { font-size: 1.8rem; }
+}
+

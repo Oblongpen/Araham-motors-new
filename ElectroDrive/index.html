@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Araham Motors</title>
-    <meta name="description" content="Araham Motors - Leading electric vehicle manufacturer. Discover our innovative EV lineup with advanced technology, sustainable design, and exceptional performance.">
-    
+     <link rel="shortcut icon" href="./attached_assets/logo-favicon.png" type="image/png" style="height: 20px;width: 30px;">
+    <meta name="description"
+        content="Araham Motors - Leading electric vehicle manufacturer. Discover our innovative EV lineup with advanced technology, sustainable design, and exceptional performance.">
+
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Araham Motors - Drive Electric. Drive Future.">
-    <meta property="og:description" content="Leading electric vehicle manufacturer with innovative technology and sustainable design.">
+    <meta property="og:description"
+        content="Leading electric vehicle manufacturer with innovative technology and sustainable design.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
     <meta property="og:image" content="assets/img/hero.jpg">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
-    
+
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Skip to Content -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    
+
     <!-- Header -->
     <header class="header" id="header">
         <div class="container">
             <div class="nav-wrapper">
                 <!-- Logo -->
                 <div class="logo">
-                   <img src="./attached_assets/logo-img-removebg-preview.png" alt="Araham Motors Logo" style="width: 20%;height: 20%;">
+                    <img src="./attached_assets/logo-img-removebg-preview.png" alt="Araham Motors Logo"
+                        style="width: 20%;height: 20%;">
                     <a href="index.html" aria-label="Araham Motors Home">
                         <span class="logo-text">Araham Motors</span>
                     </a>
-                </div> 
-                
+                </div>
+
                 <!-- Desktop Navigation -->
                 <nav class="nav-desktop" aria-label="Main navigation">
                     <ul class="nav-list">
@@ -53,7 +59,7 @@
                         <li><a href="contact.html" class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
-                
+
                 <!-- Mobile Hamburger -->
                 <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                     <span class="hamburger-line"></span>
@@ -62,7 +68,7 @@
                 </button>
             </div>
         </div>
-        
+
         <!-- Mobile Menu Overlay -->
         <div class="mobile-menu-overlay" id="mobile-menu-overlay">
             <div class="mobile-menu-content">
@@ -87,15 +93,16 @@
             </div>
         </div>
     </header>
-    
+
     <!-- Main Content -->
     <main id="main-content">
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-background">
-                <img src="./attached_assets/image.png" alt="VoltEdge Motors Electric Vehicle" class="hero-image">
+               <video src="./attached_assets/bike-vid.mp4"autoplay muted loop playsinline class="hero-video" ></video>
                 <div class="hero-overlay"></div>
             </div>
+
             <div class="hero-content">
                 <div class="container">
                     <div class="hero-text">
@@ -103,7 +110,8 @@
                             <span class="hero-title-main">Drive Electric.</span>
                             <span class="hero-title-sub">Drive Future.</span>
                         </h1>
-                        <p class="hero-description">Experience the next generation of electric vehicles with cutting-edge technology, sustainable design, and unmatched performance.</p>
+                        <p class="hero-description">Experience the next generation of electric vehicles with
+                            cutting-edge technology, sustainable design, and unmatched performance.</p>
                         <div class="hero-buttons">
                             <a href="models.html" class="btn btn-primary">Explore Models</a>
                             <a href="contact.html" class="btn btn-secondary">Book Test Drive</a>
@@ -115,43 +123,55 @@
                 <div class="scroll-arrow"></div>
             </div>
         </section>
-        
+
         <!-- Key Metrics Strip -->
         <section class="metrics" id="metrics">
             <div class="container">
-                <div class="metrics-grid">
-                    <div class="metric-card" data-animate>
-                        <div class="metric-icon">
-                            <i class="fas fa-route"></i>
+                <div class="services-grid">
+
+                    <!-- Service 1 -->
+                    <div class="service-box" data-animate>
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
                         </div>
-                        <div class="metric-value">650</div>
-                        <div class="metric-label">km Range</div>
+                        <h3 class="service-title">EV Maintenance</h3>
+                        <p class="service-desc">Regular check-ups, battery health monitoring, and performance
+                            optimization.</p>
                     </div>
-                    <div class="metric-card" data-animate>
-                        <div class="metric-icon">
-                            <i class="fas fa-tachometer-alt"></i>
+
+                    <!-- Service 2 -->
+                    <div class="service-box" data-animate>
+                        <div class="service-icon">
+                            <i class="fas fa-charging-station"></i>
                         </div>
-                        <div class="metric-value">3.2</div>
-                        <div class="metric-label">0-100 km/h (sec)</div>
+                        <h3 class="service-title">Charging Solutions</h3>
+                        <p class="service-desc">Home and public charging station installation and support.</p>
                     </div>
-                    <div class="metric-card" data-animate>
-                        <div class="metric-icon">
-                            <i class="fas fa-bolt"></i>
+
+                    <!-- Service 3 -->
+                    <!-- <div class="service-box" data-animate>
+                        <div class="service-icon">
+                            <i class="fas fa-road"></i>
                         </div>
-                        <div class="metric-value">18</div>
-                        <div class="metric-label">Fast Charge (min)</div>
-                    </div>
-                    <div class="metric-card" data-animate>
-                        <div class="metric-icon">
+                        <h3 class="service-title">Roadside Assistance</h3>
+                        <p class="service-desc">24/7 breakdown support, towing, and emergency on-road services.</p>
+                    </div> -->
+
+                    <!-- Service 4 -->
+                    <div class="service-box" data-animate>
+                        <div class="service-icon">
                             <i class="fas fa-shield-alt"></i>
                         </div>
-                        <div class="metric-value">8</div>
-                        <div class="metric-label">Year Warranty</div>
+                        <h3 class="service-title">Extended Warranty</h3>
+                        <p class="service-desc">Comprehensive coverage up to 8 years for peace of mind.</p>
                     </div>
+
                 </div>
             </div>
+
+
         </section>
-        
+
         <!-- Featured Models Carousel -->
         <section class="featured-models" id="featured-models">
             <div class="container">
@@ -159,14 +179,15 @@
                     <h2 class="section-title">Featured Models</h2>
                     <p class="section-subtitle">Discover our award-winning electric vehicle lineup</p>
                 </div>
-                
+
                 <div class="carousel-container">
                     <div class="carousel" id="models-carousel">
                         <div class="carousel-track">
                             <div class="carousel-slide active">
                                 <div class="model-card">
                                     <div class="model-image">
-                                        <img src="//bmrev.in/cdn/shop/files/signatue_pastel_blue.jpg?v=1746709845&width=1080" alt="VoltEdge Apex" loading="lazy">
+                                        <img src="//bmrev.in/cdn/shop/files/signatue_pastel_blue.jpg?v=1746709845&width=1080"
+                                            alt="VoltEdge Apex" loading="lazy">
                                     </div>
                                     <div class="model-info">
                                         <h3 class="model-name">VoltEdge Apex</h3>
@@ -180,11 +201,12 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="carousel-slide">
                                 <div class="model-card">
                                     <div class="model-image">
-                                        <img src="//bmrev.in/cdn/shop/files/sonic-MercurySilver.jpg?v=1746269528&width=1080" alt="VoltEdge Pulse" loading="lazy">
+                                        <img src="//bmrev.in/cdn/shop/files/sonic-MercurySilver.jpg?v=1746269528&width=1080"
+                                            alt="VoltEdge Pulse" loading="lazy">
                                     </div>
                                     <div class="model-info">
                                         <h3 class="model-name">VoltEdge Pulse</h3>
@@ -198,11 +220,12 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="carousel-slide">
                                 <div class="model-card">
                                     <div class="model-image">
-                                        <img src="//bmrev.in/cdn/shop/files/Bliss-OceanicBlue.jpg?v=1746265410&width=1080" alt="VoltEdge Prime SUV" loading="lazy">
+                                        <img src="//bmrev.in/cdn/shop/files/Bliss-OceanicBlue.jpg?v=1746265410&width=1080"
+                                            alt="VoltEdge Prime SUV" loading="lazy">
                                     </div>
                                     <div class="model-info">
                                         <h3 class="model-name">VoltEdge Prime SUV</h3>
@@ -216,11 +239,12 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="carousel-slide">
                                 <div class="model-card">
                                     <div class="model-image">
-                                        <img src="//bmrev.in/cdn/shop/files/raptor-LightPurple_b1b5041f-dbcf-43cd-9582-d64df7760879.jpg?v=1746863088&width=1080" alt="VoltEdge City" loading="lazy">
+                                        <img src="//bmrev.in/cdn/shop/files/raptor-LightPurple_b1b5041f-dbcf-43cd-9582-d64df7760879.jpg?v=1746863088&width=1080"
+                                            alt="VoltEdge City" loading="lazy">
                                     </div>
                                     <div class="model-info">
                                         <h3 class="model-name">VoltEdge City</h3>
@@ -237,7 +261,8 @@
                             <div class="carousel-slide">
                                 <div class="model-card">
                                     <div class="model-image">
-                                        <img src="//bmrev.in/cdn/shop/files/Artboard3_0e454f8e-4412-4dce-9327-501c1cf88605.jpg?v=1748500332&width=1080" alt="VoltEdge City" loading="lazy">
+                                        <img src="//bmrev.in/cdn/shop/files/Artboard3_0e454f8e-4412-4dce-9327-501c1cf88605.jpg?v=1748500332&width=1080"
+                                            alt="VoltEdge City" loading="lazy">
                                     </div>
                                     <div class="model-info">
                                         <h3 class="model-name">VoltEdge City</h3>
@@ -253,7 +278,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Carousel Controls -->
                     <button class="carousel-btn carousel-btn-prev" id="carousel-prev" aria-label="Previous model">
                         <i class="fas fa-chevron-left"></i>
@@ -261,7 +286,7 @@
                     <button class="carousel-btn carousel-btn-next" id="carousel-next" aria-label="Next model">
                         <i class="fas fa-chevron-right"></i>
                     </button>
-                    
+
                     <!-- Carousel Indicators -->
                     <div class="carousel-indicators">
                         <button class="carousel-indicator active" data-slide="0" aria-label="Go to slide 1"></button>
@@ -272,7 +297,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Technology Teaser -->
         <section class="technology-teaser" id="technology">
             <div class="container">
@@ -280,46 +305,49 @@
                     <h2 class="section-title">Advanced Technology</h2>
                     <p class="section-subtitle">Innovation that powers the future of mobility</p>
                 </div>
-                
+
                 <div class="tech-grid">
                     <div class="tech-card" data-animate>
                         <div class="tech-icon">
                             <i class="fas fa-battery-full"></i>
                         </div>
                         <h3 class="tech-title">Next-Gen Battery</h3>
-                        <p class="tech-description">Revolutionary lithium-ion technology delivering 650km range with ultra-fast 18-minute charging capabilities.</p>
+                        <p class="tech-description">Revolutionary lithium-ion technology delivering 650km range with
+                            ultra-fast 18-minute charging capabilities.</p>
                         <a href="technology.html" class="tech-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    
+
                     <div class="tech-card" data-animate>
                         <div class="tech-icon">
                             <i class="fas fa-cog"></i>
                         </div>
                         <h3 class="tech-title">Dual Motor System</h3>
-                        <p class="tech-description">Advanced electric motors with intelligent torque distribution for optimal performance and efficiency.</p>
+                        <p class="tech-description">Advanced electric motors with intelligent torque distribution for
+                            optimal performance and efficiency.</p>
                         <a href="technology.html" class="tech-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    
+
                     <div class="tech-card" data-animate>
                         <div class="tech-icon">
                             <i class="fas fa-wifi"></i>
                         </div>
                         <h3 class="tech-title">Smart Connectivity</h3>
-                        <p class="tech-description">5G-enabled infotainment system with over-the-air updates and AI-powered assistance features.</p>
+                        <p class="tech-description">5G-enabled infotainment system with over-the-air updates and
+                            AI-powered assistance features.</p>
                         <a href="technology.html" class="tech-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <!-- Testimonials -->
         <section class="testimonials" id="testimonials">
             <div class="container">
                 <div class="section-header" data-animate>
                     <h2 class="section-title">What Our Customers Say</h2>
-                    <p class="section-subtitle">Real experiences from VoltEdge owners</p>
+                    <p class="section-subtitle">Real experiences from Araham Motors</p>
                 </div>
-                
+
                 <div class="testimonials-grid">
                     <div class="testimonial-card" data-animate>
                         <div class="testimonial-content">
@@ -330,41 +358,47 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                             </div>
-                            <p class="testimonial-text">"The VoltEdge Apex has completely transformed my daily commute. The range is incredible, and the charging speed means I never have to worry about planning around charging stops."</p>
+                            <p class="testimonial-text">“Buying my EV bike from Araham Motors in Perimet was the best
+                                decision I’ve made. The ride is smooth, battery life is impressive, and charging is
+                                super quick. Commuting in Chennai traffic has become stress-free. Truly a game-changer
+                                for daily travel!”</p>
                         </div>
                         <div class="testimonial-author">
                             <div class="author-avatar">
-                                <img src="assets/img/executive1.jpg" alt="Sarah Chen" loading="lazy">
+                                <img src="./attached_assets/sayeed.jpg" alt="Sarah Chen" loading="lazy">
                             </div>
                             <div class="author-info">
-                                <h4 class="author-name">Sarah Chen</h4>
-                                <p class="author-title">Marketing Director</p>
+                                <h4 class="author-name">Sunil Shetty</h4>
+                                <p class="author-title">Trader</p>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="testimonial-card" data-animate>
                         <div class="testimonial-content">
                             <div class="testimonial-stars">
-                                <i class="fas fa-star"></i>
+                                <!-- <i class="fas fa-star"></i> -->
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                             </div>
-                            <p class="testimonial-text">"As a tech enthusiast, I'm impressed by the smart features and over-the-air updates. The car literally gets better over time. The build quality is exceptional."</p>
+                            <p class="testimonial-text">“Araham Motors has exceeded my expectations. The design is
+                                sleek, the performance is powerful, and the maintenance is minimal compared to petrol
+                                bikes. Driving around Chennai feels effortless, and I’m proud to contribute to a greener
+                                future.”</p>
                         </div>
                         <div class="testimonial-author">
                             <div class="author-avatar">
-                                <img src="assets/img/executive2.jpg" alt="Michael Rodriguez" loading="lazy">
+                                <img src="./attached_assets/yasir.jpg" alt="Michael Rodriguez" loading="lazy">
                             </div>
                             <div class="author-info">
-                                <h4 class="author-name">Michael Rodriguez</h4>
+                                <h4 class="author-name">Riyan shah</h4>
                                 <p class="author-title">Software Engineer</p>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="testimonial-card" data-animate>
                         <div class="testimonial-content">
                             <div class="testimonial-stars">
@@ -372,36 +406,39 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <!-- <i class="fas fa-star"></i> -->
                             </div>
-                            <p class="testimonial-text">"The Prime SUV is perfect for our family adventures. Spacious, safe, and the all-wheel drive gives us confidence in any weather condition. Plus, the running costs are amazing!"</p>
+                            <p class="testimonial-text">“I’ve been using my EV bike for over a month now, and I
+                                absolutely love it! The bike is silent, eco-friendly, and cost-efficient. Araham Motors
+                                provided excellent support during the purchase and even helped me set up a home charging
+                                point. Highly recommended!”</p>
                         </div>
                         <div class="testimonial-author">
                             <div class="author-avatar">
-                                <img src="assets/img/executive3.jpg" alt="Emma Thompson" loading="lazy">
+                                <img src="./attached_assets/kaif.jpg" alt="Emma Thompson" loading="lazy">
                             </div>
                             <div class="author-info">
-                                <h4 class="author-name">Emma Thompson</h4>
-                                <p class="author-title">Architecture Consultant</p>
+                                <h4 class="author-name">Rohan</h4>
+                                <p class="author-title">CEO of Urbantech</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <!-- Dealer Callout -->
         <section class="dealer-callout">
             <div class="container">
                 <div class="callout-content" data-animate>
-                    <h2 class="callout-title">Ready to Experience VoltEdge?</h2>
+                    <h2 class="callout-title">Ready to Experience Araham Motors?</h2>
                     <p class="callout-description">Find your nearest dealer and schedule a test drive today</p>
                     <a href="contact.html" class="btn btn-primary btn-large">Locate a Dealer</a>
                 </div>
             </div>
         </section>
     </main>
-    
+
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-gradient"></div>
@@ -409,11 +446,12 @@
             <div class="footer-content">
                 <div class="footer-section footer-brand">
                     <div class="footer-logo">
-                        <span class="logo-text">VoltEdge</span>
+                        <span class="logo-text">Araham Motors</span>
                     </div>
                     <p class="footer-tagline">Drive Electric. Drive Future.</p>
-                    <p class="footer-description">Leading the electric revolution with innovative vehicles that combine cutting-edge technology with sustainable design.</p>
-                    
+                    <p class="footer-description">Leading the electric revolution with innovative vehicles that combine
+                        cutting-edge technology with sustainable design.</p>
+
                     <div class="social-links">
                         <a href="#" class="social-link" aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
@@ -432,7 +470,7 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="footer-section">
                     <h3 class="footer-title">Vehicles</h3>
                     <ul class="footer-links">
@@ -444,7 +482,7 @@
                         <li><a href="contact.html">Test Drive</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h3 class="footer-title">Company</h3>
                     <ul class="footer-links">
@@ -456,7 +494,7 @@
                         <li><a href="contact.html">Investor Relations</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h3 class="footer-title">Support</h3>
                     <ul class="footer-links">
@@ -468,20 +506,22 @@
                         <li><a href="contact.html">Roadside Assistance</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section footer-newsletter">
                     <h3 class="footer-title">Stay Connected</h3>
-                    <p class="newsletter-description">Get the latest news, updates, and exclusive offers from VoltEdge Motors.</p>
-                    
+                    <p class="newsletter-description">Get the latest news, updates, and exclusive offers from VoltEdge
+                        Motors.</p>
+
                     <form class="newsletter-form" id="newsletter-form">
                         <div class="form-group">
-                            <input type="email" class="newsletter-input" placeholder="Enter your email" required aria-label="Email address">
+                            <input type="email" class="newsletter-input" placeholder="Enter your email" required
+                                aria-label="Email address">
                             <button type="submit" class="newsletter-btn" aria-label="Subscribe to newsletter">
                                 <i class="fas fa-arrow-right"></i>
                             </button>
                         </div>
                     </form>
-                    
+
                     <div class="footer-contact">
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
@@ -494,7 +534,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <div class="footer-bottom-content">
                     <p class="copyright">&copy; 2025 VoltEdge Motors. All rights reserved.</p>
@@ -508,16 +548,17 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- Scroll to Top Button -->
     <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
         <i class="fas fa-chevron-up"></i>
     </button>
-    
+
     <!-- Toast Notification Container -->
     <div id="toast-container"></div>
-    
+
     <!-- JavaScript -->
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

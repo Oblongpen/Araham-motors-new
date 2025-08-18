@@ -271,20 +271,24 @@ App.initializeCarousel = function() {
     let autoplayTimer;
     
     // Update carousel position
-    const updateCarousel = () => {
-        const translateX = -this.state.currentSlide * 100;
-        track.style.transform = `translateX(${translateX}%)`;
-        
-        // Update indicators
-        indicators.forEach((indicator, index) => {
-            indicator.classList.toggle('active', index === this.state.currentSlide);
-        });
-        
-        // Update slide active states
-        slides.forEach((slide, index) => {
-            slide.classList.toggle('active', index === this.state.currentSlide);
-        });
-    };
+    // Update carousel position
+const updateCarousel = () => {
+    const slideWidth = slides[0].offsetWidth; // actual visible width incl. responsive %
+    const translateX = -(this.state.currentSlide * slideWidth);
+    track.style.transform = `translateX(${translateX}px)`;
+
+    // Indicators
+    indicators.forEach((indicator, index) => {
+        indicator.classList.toggle("active", index === this.state.currentSlide);
+    });
+
+    // Active slide
+    slides.forEach((slide, index) => {
+        slide.classList.toggle("active", index === this.state.currentSlide);
+    });
+};
+
+
     
     // Navigate to specific slide
     const goToSlide = (index) => {

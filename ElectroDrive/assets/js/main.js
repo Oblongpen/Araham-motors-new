@@ -1,7 +1,7 @@
 /**
- * VoltEdge Motors - Main JavaScript File
+ * Araham Motors - Main JavaScript File
  * Mobile-First Creative Electric Vehicle Website
- * Author: VoltEdge Development Team
+ * Author: Rio Development Team
  * Version: 1.0.0
  */
 
@@ -598,7 +598,7 @@ App.renderModelsGrid = function() {
     modelsGrid.innerHTML = window.MODELS_DATA.map(model => `
         <div class="model-grid-card" data-body-type="${model.bodyType}" data-range="${model.rangeKm}" data-price="${model.price}">
             <div class="model-grid-image">
-                <img src="${model.image}" alt="${model.name}" loading="lazy">
+                <img src="https://bmrev.in/cdn/shop/files/signatue_pastel_blue.jpg?v=1746709845&width=500" loading="lazy">
                 <input type="checkbox" id="compare-${model.id}" class="compare-checkbox" data-model-id="${model.id}">
                 <label for="compare-${model.id}" class="compare-label">
                     <i class="fas fa-check"></i>

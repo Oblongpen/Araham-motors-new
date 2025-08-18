@@ -1,4 +1,4 @@
-/* VoltEdge Motors - Mobile-First Creative Electric Vehicle Website Styles */
+/* Araham Motors - Mobile-First Creative Electric Vehicle Website Styles */
 
 /* CSS Custom Properties */
 :root {
@@ -808,7 +808,7 @@ section {
 /* Page Header */
 .page-header {
     padding: var(--space-24) 0 var(--space-16);
-    background: linear-gradient(135deg, var(--light) 0%, var(--gray-100) 100%);
+    /* background: linear-gradient(135deg, var(--light) 0%, var(--gray-100) 100%); */
     text-align: center;
     margin-top: 70px;
 }
@@ -817,7 +817,7 @@ section {
 @media (min-width: 768px) {
     .page-header {
         margin-top: 80px;
-        padding: var(--space-32) 0 var(--space-24);
+        /* padding: var(--space-32) 0 var(--space-24); */
     }
 }
 

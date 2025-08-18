@@ -398,7 +398,7 @@ const MODELS = [
         batteryKWh: 100,
         fastCharge: 18,
         drivetrain: 'AWD',
-        image: 'assets/img/model-ev1.jpg',
+        image: 'https://bmrev.in/cdn/shop/files/sonic-LunarGrey.jpg?v=1746269528&width=500',
         specs: {
             performance: {
                 'Top Speed': '250 km/h',
@@ -437,7 +437,7 @@ const MODELS = [
         batteryKWh: 80,
         fastCharge: 22,
         drivetrain: 'RWD',
-        image: 'assets/img/model-ev2.jpg',
+        image: 'https://bmrev.in/cdn/shop/files/Bliss-LunarGrey.jpg?v=1746265410&width=500',
         specs: {
             performance: {
                 'Top Speed': '210 km/h',
@@ -476,7 +476,7 @@ const MODELS = [
         batteryKWh: 95,
         fastCharge: 20,
         drivetrain: 'AWD',
-        image: 'assets/img/model-ev3.jpg',
+        image: 'https://bmrev.in/cdn/shop/files/signatue_pastel_blue.jpg?v=1746709845&width=500',
         specs: {
             performance: {
                 'Top Speed': '200 km/h',
@@ -515,7 +515,7 @@ const MODELS = [
         batteryKWh: 60,
         fastCharge: 25,
         drivetrain: 'FWD',
-        image: 'assets/img/model-ev4.jpg',
+        image: 'https://bmrev.in/cdn/shop/files/raptor-EmberRed_313c057f-edd6-4455-a911-1b147fb0f4f0.jpg?v=1746863088&width=500',
         specs: {
             performance: {
                 'Top Speed': '180 km/h',
@@ -598,7 +598,7 @@ App.renderModelsGrid = function() {
     modelsGrid.innerHTML = window.MODELS_DATA.map(model => `
         <div class="model-grid-card" data-body-type="${model.bodyType}" data-range="${model.rangeKm}" data-price="${model.price}">
             <div class="model-grid-image">
-                <img src="https://bmrev.in/cdn/shop/files/signatue_pastel_blue.jpg?v=1746709845&width=500" loading="lazy">
+                <img src="${model.image}" alt="${model.name}" loading="lazy">
                 <input type="checkbox" id="compare-${model.id}" class="compare-checkbox" data-model-id="${model.id}">
                 <label for="compare-${model.id}" class="compare-label">
                     <i class="fas fa-check"></i>

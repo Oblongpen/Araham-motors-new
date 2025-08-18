@@ -506,7 +506,7 @@ const MODELS = [
     },
     {
         id: 'city',
-        name: 'VoltEdge City',
+        name: 'motor City',
         bodyType: 'hatchback',
         price: 29990,
         rangeKm: 420,
